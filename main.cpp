@@ -8,7 +8,9 @@ int main()
 {
     
     Pokedex& dex = Pokedex::getInstance("pokedex.csv");
-    
+    Pokemon p = dex.cloneByName("Charmander");
+    p.displayInfo();
+
 
     Pokemon salameche(1,"Salameche",5,3,2,1);
 

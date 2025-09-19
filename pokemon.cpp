@@ -4,16 +4,15 @@
 
 Pokemon::Pokemon(int id, string name, double hp, double att, double def, int gen):
 id(id),name(name),hitPoint(hp),attack(att),defense(def),generation(gen){
-    std::cout << "Nouveau pokemon : " << name << std::endl;
 }
+
+Pokemon::Pokemon() : id(0), name(""), hitPoint(0), attack(0), defense(0), generation(0) {}
 
 Pokemon::Pokemon(const Pokemon& anotherPokemon):
 id(anotherPokemon.id),name(anotherPokemon.name),hitPoint(anotherPokemon.hitPoint),attack(anotherPokemon.attack),defense(anotherPokemon.defense),generation(anotherPokemon.generation){
-    std::cout << "Copie du pokemon : " << name << std::endl;
 }
 
 Pokemon::~Pokemon(){
-    std::cout << "Destructor" << std::endl;
 }
 
 void Pokemon::displayInfo() const{
@@ -29,7 +28,7 @@ int Pokemon::getId(){
     return id;
 }
 
-string Pokemon::getName(){
+string Pokemon::getName()const{
     return name;
 }
 

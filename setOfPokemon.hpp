@@ -7,7 +7,7 @@ using std::string;
 using std::vector;
 
 class SetOfPokemon{
-private:
+protected:
     vector<Pokemon> pokemonVector;
 public:
     Pokemon findByIndex(int index);
