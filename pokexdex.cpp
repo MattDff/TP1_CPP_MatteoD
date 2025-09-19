@@ -6,7 +6,7 @@
 Pokedex* Pokedex::pinstance = nullptr;
 
 Pokedex::Pokedex(std::string fileName) : pokemonVector() {
-	// Ici tu peux remplir pokemonVector avec lireCSV(fileName) si besoin
+    lireCSV(fileName);
 }
 
 Pokedex::~Pokedex() {}
