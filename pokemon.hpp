@@ -17,13 +17,14 @@ public:
     Pokemon(const int id, string name, double hp, double att, double def, int gen);
 
     Pokemon(const Pokemon& anotherPokemon);
+    Pokemon();
 
     ~Pokemon();
 
     void displayInfo() const;
 
     int getId();
-    string getName();
+    string getName() const;
     double getHitPoint();
     double getAttack();
     double getDefense();

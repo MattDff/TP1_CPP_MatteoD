@@ -1,5 +1,5 @@
 #include "setOfPokemon.hpp"
-#include "Pokemon.hpp"
+#include "pokemon.hpp"
 #include <vector>
 #include <string>
 #include <iostream>
@@ -13,6 +13,7 @@ Pokemon SetOfPokemon::findByIndex(int index) {
             return p;
         }
     }
+    return Pokemon(-1, "Not Found", 0, 0, 0, 0);
 }
 
 Pokemon SetOfPokemon::findByName(string name) {
@@ -21,10 +22,12 @@ Pokemon SetOfPokemon::findByName(string name) {
             return p;
         }
     }
+    return Pokemon(-1, "Not Found", 0, 0, 0, 0);
 }
 
 void SetOfPokemon::display() const {
     for (Pokemon p : pokemonVector) {
         std::cout << p.getName() << " | " << p.getId() << std::endl;
     }
+    
 }

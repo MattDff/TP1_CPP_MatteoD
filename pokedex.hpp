@@ -1,13 +1,22 @@
+
 #pragma once
 #include "setOfPokemon.hpp"
-
+#include <string>
+#include <iostream>
 
 class Pokedex : public SetOfPokemon {
+private:
     static Pokedex* pinstance;
-protected:
-    explicit Pokedex(string fileName);
+    Pokedex(const std::string& fileName); 
     ~Pokedex();
 public:
-    Pokedex(Pokedex &other) = delete;
-    void operator=(const Pokedex &) = delete;
+    
+    static Pokedex& getInstance(const std::string& fileName);
+    
+    
+    Pokedex(const Pokedex&) = delete;
+    void operator=(const Pokedex&) = delete;
+
+    
+    Pokemon cloneByName(const std::string& name);
 };

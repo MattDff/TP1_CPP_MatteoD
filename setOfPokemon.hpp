@@ -1,5 +1,5 @@
 #pragma once
-#include "Pokemon.hpp"
+#include "pokemon.hpp"
 #include <vector>
 #include <string>
 
@@ -7,8 +7,8 @@ using std::string;
 using std::vector;
 
 class SetOfPokemon{
-private:
-    virtual vector<Pokemon> pokemonVector=0;
+protected:
+    vector<Pokemon> pokemonVector;
 public:
     Pokemon findByIndex(int index);
     Pokemon findByName(string name);
