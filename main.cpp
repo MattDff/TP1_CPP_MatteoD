@@ -8,14 +8,12 @@ int main() {
 
     FiniteStateMachine fsm;
 
-    std::cout << "===== Début du jeu Pokémon =====\n";
+    std::cout << "===== Début du jeu Pokémon =====" << std::endl;
 
     // Boucle de jeu (10 itérations pour tester rapidement)
     for (int i = 0; i < 10; i++) {
-        std::cout << "\n--- Tour " << (i+1) << " ---\n";
+        std::cout << "\n--- Tour " << (i+1) << " ---" << std::endl;
         fsm.execute();
     }
-
-    std::cout << "\n===== Fin de la partie =====\n";
     return 0;
 }

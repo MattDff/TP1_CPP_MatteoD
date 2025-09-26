@@ -4,7 +4,6 @@
 #include <ctime>
 #include <iostream>
 #include <string>
-#include "trainer.h"
 #include "setOfPokemon.hpp"
 
 // ========== AbstractState ==========
