@@ -4,6 +4,8 @@
 #include <ctime>
 #include <iostream>
 #include <string>
+#include "trainer.h"
+#include "setOfPokemon.hpp"
 
 // ========== AbstractState ==========
 AbstractState::AbstractState(FiniteStateMachine* stateMachine) : fsm(stateMachine) {}
@@ -92,7 +94,7 @@ void StateGameOver::run() {
 }
 
 // ========== FSM ==========
-FiniteStateMachine::FiniteStateMachine() {
+FiniteStateMachine::FiniteStateMachine(){
     srand(time(nullptr));
     currentState = new StateAccueil(this);
 }

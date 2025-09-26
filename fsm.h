@@ -1,8 +1,7 @@
 #ifndef FSM_HPP
 #define FSM_HPP
 
-#include <iostream>
-#include <string>
+#include "trainer.h"
 
 class FiniteStateMachine;
 

@@ -18,6 +18,8 @@ add_executable(TP1_CPP_MatteoD
         setOfPokemon.cpp
         setOfPokemon.hpp
         main.cpp
+        trainer.cpp
+        trainer.h
 )
 
 target_link_libraries(TP1_CPP_MatteoD

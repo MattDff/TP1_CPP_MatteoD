@@ -6,7 +6,6 @@ int main() {
 
     Pokedex& pokedex = Pokedex::getInstance("/home/mdoffe/Documents/TP1_CPP_MatteoD/pokedex.csv");
 
-    // Créer la machine à états
     FiniteStateMachine fsm;
 
     std::cout << "===== Début du jeu Pokémon =====\n";
