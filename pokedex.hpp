@@ -19,4 +19,5 @@ public:
 
     
     Pokemon cloneByName(const std::string& name);
+    Pokemon cloneById(int id);
 };

@@ -17,7 +17,8 @@ add_executable(TP1_CPP_MatteoD
         pokexdex.cpp
         setOfPokemon.cpp
         setOfPokemon.hpp
-        main.cpp)
+        main.cpp
+)
 
 target_link_libraries(TP1_CPP_MatteoD
         sfml-graphics

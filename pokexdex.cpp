@@ -53,3 +53,12 @@ Pokemon Pokedex::cloneByName(const std::string& name) {
     }
     return Pokemon();
 }
+
+Pokemon Pokedex::cloneById(int id) {
+    for (Pokemon& p : pokemonVector) {
+        if (p.getId() == id) {
+            return p;
+        }
+    }
+    return Pokemon();
+}
